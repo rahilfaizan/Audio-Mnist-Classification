@@ -33,7 +33,7 @@ if audio_bytes:
     audio_file = "audio.wav"
     with open(audio_file, "wb") as f:
         f.write(audio_bytes)
-    prediction = predict(convert("C:/Users/rahil/Downloads/Audio_Mnist_streamlit/audio.wav"))
+    prediction = predict(convert("audio.wav"))
     st.markdown(f"<p style='font-size: {font_size};'>Prediction: {prediction}</p>", unsafe_allow_html=True)
     st.image("spec.png", width=100)
 
